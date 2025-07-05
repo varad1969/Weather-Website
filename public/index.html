@@ -14,18 +14,18 @@
         }
 
         :root {
-    --primary-gradient: linear-gradient(135deg, #ff9a56 0%, #ff6b95 50%, #c44569 100%);
-    --secondary-gradient: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+    --primary-gradient: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+    --secondary-gradient: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     --success-gradient: linear-gradient(135deg, #00cec9 0%, #55a3ff 100%);
     --warning-gradient: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%);
-    --glass-bg: rgba(255, 255, 255, 0.25);
-    --glass-border: rgba(255, 255, 255, 0.4);
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
     --text-primary: #ffffff;
-    --text-secondary: rgba(255, 255, 255, 0.95);
-    --text-muted: rgba(255, 255, 255, 0.85);
+    --text-secondary: rgba(255, 255, 255, 0.9);
+    --text-muted: rgba(255, 255, 255, 0.7);
     --accent-color: #00cec9;
-    --shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-    --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.25);
+    --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
         body {
@@ -2072,22 +2072,22 @@
 
 function updateWeatherBackground(weatherType) {
     const backgroundGradients = {
-        'clear': 'linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%)',
-        'clear sky': 'linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%)',
-        'sunny': 'linear-gradient(135deg, #fdcb6e 0%, #e17055 100%)',
-        'partly cloudy': 'linear-gradient(135deg, #74b9ff 0%, #0984e3 100%)',
-        'cloudy': 'linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%)',
-        'overcast': 'linear-gradient(135deg, #636e72 0%, #2d3436 100%)',
-        'rainy': 'linear-gradient(135deg, #00cec9 0%, #55a3ff 100%)',
+        'clear': 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
+        'clear sky': 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
+        'sunny': 'linear-gradient(135deg, #f7971e 0%, #ffd200 100%)',
+        'partly cloudy': 'linear-gradient(135deg, #485563 0%, #29323c 100%)',
+        'cloudy': 'linear-gradient(135deg, #bdc3c7 0%, #2c3e50 100%)',
+        'overcast': 'linear-gradient(135deg, #57606f 0%, #2f3542 100%)',
+        'rainy': 'linear-gradient(135deg, #00416a 0%, #799f0c 100%)',
         'light rain': 'linear-gradient(135deg, #74b9ff 0%, #0984e3 100%)',
-        'thunderstorms': 'linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%)',
-        'snow': 'linear-gradient(135deg, #ddd6fe 0%, #e0e7ff 100%)',
-        'foggy': 'linear-gradient(135deg, #b2bec3 0%, #ddd6fe 100%)',
-        'hazy': 'linear-gradient(135deg, #fab1a0 0%, #ffeaa7 100%)',
-        'hot': 'linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%)',
-        'very hot': 'linear-gradient(135deg, #e84393 0%, #fd79a8 100%)',
-        'extremely hot': 'linear-gradient(135deg, #d63031 0%, #e84393 100%)',
-        'tropical': 'linear-gradient(135deg, #00b894 0%, #00cec9 100%)'
+        'thunderstorms': 'linear-gradient(135deg, #2c3e50 0%, #4a569d 100%)',
+        'snow': 'linear-gradient(135deg, #e6ddd4 0%, #d5d4d0 100%)',
+        'foggy': 'linear-gradient(135deg, #606c88 0%, #3f4c6b 100%)',
+        'hazy': 'linear-gradient(135deg, #f2709c 0%, #ff9472 100%)',
+        'hot': 'linear-gradient(135deg, #ff6b6b 0%, #ffa726 100%)',
+        'very hot': 'linear-gradient(135deg, #ee5a24 0%, #feca57 100%)',
+        'extremely hot': 'linear-gradient(135deg, #ff3838 0%, #ff9500 100%)',
+        'tropical': 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)'
     };
     
     const gradient = backgroundGradients[weatherType] || backgroundGradients['clear'];
