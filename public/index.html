@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeatherPro - Professional Weather Dashboard</title>
+    <title>WeatherPro - Modern Weather Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -13,67 +13,7 @@
             box-sizing: border-box;
         }
 
-        :root[data-theme="corporate"] {
-            --primary-gradient: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            --secondary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --success-gradient: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
-            --warning-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            --glass-bg: rgba(255, 255, 255, 0.12);
-            --glass-border: rgba(255, 255, 255, 0.2);
-            --text-primary: #ffffff;
-            --text-secondary: rgba(255, 255, 255, 0.9);
-            --text-muted: rgba(255, 255, 255, 0.7);
-            --accent-color: #4facfe;
-            --shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-            --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        :root[data-theme="executive"] {
-            --primary-gradient: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
-            --secondary-gradient: linear-gradient(135deg, #2d3561 0%, #c850c0 50%, #ffcc70 100%);
-            --success-gradient: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
-            --warning-gradient: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-            --glass-bg: rgba(255, 255, 255, 0.08);
-            --glass-border: rgba(255, 255, 255, 0.15);
-            --text-primary: #ffffff;
-            --text-secondary: rgba(255, 255, 255, 0.85);
-            --text-muted: rgba(255, 255, 255, 0.6);
-            --accent-color: #00d2ff;
-            --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-            --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.5);
-        }
-
-        :root[data-theme="platinum"] {
-            --primary-gradient: linear-gradient(135deg, #232526 0%, #414345 100%);
-            --secondary-gradient: linear-gradient(135deg, #bdc3c7 0%, #2c3e50 100%);
-            --success-gradient: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
-            --warning-gradient: linear-gradient(135deg, #fd79a8 0%, #e84393 100%);
-            --glass-bg: rgba(255, 255, 255, 0.1);
-            --glass-border: rgba(255, 255, 255, 0.2);
-            --text-primary: #ffffff;
-            --text-secondary: rgba(255, 255, 255, 0.9);
-            --text-muted: rgba(255, 255, 255, 0.7);
-            --accent-color: #74b9ff;
-            --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.4);
-        }
-
-        :root[data-theme="midnight"] {
-            --primary-gradient: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 50%, #2d2d2d 100%);
-            --secondary-gradient: linear-gradient(135deg, #434343 0%, #000000 100%);
-            --success-gradient: linear-gradient(135deg, #56ab2f 0%, #a8e6cf 100%);
-            --warning-gradient: linear-gradient(135deg, #ff8008 0%, #ffc837 100%);
-            --glass-bg: rgba(255, 255, 255, 0.05);
-            --glass-border: rgba(255, 255, 255, 0.1);
-            --text-primary: #ffffff;
-            --text-secondary: rgba(255, 255, 255, 0.8);
-            --text-muted: rgba(255, 255, 255, 0.5);
-            --accent-color: #56ab2f;
-            --shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
-            --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.7);
-        }
-
-        :root[data-theme="royal"] {
+        :root {
             --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             --success-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
@@ -83,7 +23,7 @@
             --text-primary: #ffffff;
             --text-secondary: rgba(255, 255, 255, 0.9);
             --text-muted: rgba(255, 255, 255, 0.7);
-            --accent-color: #f093fb;
+            --accent-color: #4facfe;
             --shadow: 0 8px 32px rgba(102, 126, 234, 0.2);
             --shadow-hover: 0 15px 40px rgba(102, 126, 234, 0.3);
         }
@@ -352,153 +292,6 @@
             align-items: center;
             gap: 20px;
             animation: slideLeft 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
-        }
-
-        /* Professional Theme Selector */
-        .theme-selector {
-            position: relative;
-        }
-
-        .theme-btn {
-            background: var(--glass-bg);
-            backdrop-filter: blur(25px);
-            border: 1px solid var(--glass-border);
-            border-radius: 18px;
-            padding: 14px 20px;
-            color: var(--text-primary);
-            cursor: pointer;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 0.95rem;
-            font-weight: 600;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .theme-btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: left 0.6s ease;
-        }
-
-        .theme-btn:hover::before {
-            left: 100%;
-        }
-
-        .theme-btn:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .theme-dropdown {
-            position: absolute;
-            top: 100%;
-            right: 0;
-            margin-top: 15px;
-            background: var(--glass-bg);
-            backdrop-filter: blur(25px);
-            border: 1px solid var(--glass-border);
-            border-radius: 20px;
-            padding: 15px;
-            min-width: 280px;
-            display: none;
-            z-index: 1000;
-            box-shadow: var(--shadow);
-            animation: dropdownSlide 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .theme-dropdown.show {
-            display: block;
-        }
-
-        @keyframes dropdownSlide {
-            0% {
-                opacity: 0;
-                transform: translateY(-20px) scale(0.9);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
-        }
-
-        .theme-option {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            padding: 15px;
-            border-radius: 12px;
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            margin-bottom: 8px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .theme-option::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-            transition: left 0.5s ease;
-        }
-
-        .theme-option:hover::before {
-            left: 100%;
-        }
-
-        .theme-option:hover {
-            background: rgba(255, 255, 255, 0.15);
-            transform: translateX(8px);
-        }
-
-        .theme-preview {
-            width: 24px;
-            height: 24px;
-            border-radius: 8px;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .theme-preview::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 8px;
-            height: 8px;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .theme-preview.corporate { background: linear-gradient(135deg, #1e3c72, #2a5298); }
-        .theme-preview.executive { background: linear-gradient(135deg, #0f0f23, #16213e); }
-        .theme-preview.platinum { background: linear-gradient(135deg, #232526, #414345); }
-        .theme-preview.midnight { background: linear-gradient(135deg, #0c0c0c, #2d2d2d); }
-        .theme-preview.royal { background: linear-gradient(135deg, #667eea, #764ba2); }
-
-        .theme-name {
-            font-weight: 600;
-            font-size: 1rem;
-        }
-
-        .theme-description {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            margin-top: 2px;
         }
 
         /* Enhanced Personal Weather Toggle */
@@ -1452,7 +1245,7 @@
                     <i class="fas fa-cloud-sun logo-icon"></i>
                     <span>WeatherPro</span>
                 </div>
-                <p class="subtitle">Professional Global Weather Intelligence</p>
+                <p class="subtitle">Modern Global Weather Intelligence</p>
             </div>
             <div class="controls">
                 <!-- Personal Weather Toggle -->
@@ -1460,52 +1253,6 @@
                     <i class="fas fa-user-circle"></i>
                     <span>My Weather</span>
                 </button>
-                
-                <!-- Theme Selector -->
-                <div class="theme-selector">
-                    <button class="theme-btn" onclick="toggleThemeDropdown()">
-                        <i class="fas fa-palette"></i>
-                        <span>Professional Themes</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="theme-dropdown" id="themeDropdown">
-                        <div class="theme-option" onclick="changeTheme('corporate')">
-                            <div class="theme-preview corporate"></div>
-                            <div>
-                                <div class="theme-name">Corporate Blue</div>
-                                <div class="theme-description">Professional business theme</div>
-                            </div>
-                        </div>
-                        <div class="theme-option" onclick="changeTheme('executive')">
-                            <div class="theme-preview executive"></div>
-                            <div>
-                                <div class="theme-name">Executive Dark</div>
-                                <div class="theme-description">Premium executive style</div>
-                            </div>
-                        </div>
-                        <div class="theme-option" onclick="changeTheme('platinum')">
-                            <div class="theme-preview platinum"></div>
-                            <div>
-                                <div class="theme-name">Platinum Steel</div>
-                                <div class="theme-description">Modern metallic design</div>
-                            </div>
-                        </div>
-                        <div class="theme-option" onclick="changeTheme('midnight')">
-                            <div class="theme-preview midnight"></div>
-                            <div>
-                                <div class="theme-name">Midnight Pro</div>
-                                <div class="theme-description">Deep professional dark</div>
-                            </div>
-                        </div>
-                        <div class="theme-option" onclick="changeTheme('royal')">
-                            <div class="theme-preview royal"></div>
-                            <div>
-                                <div class="theme-name">Royal Gradient</div>
-                                <div class="theme-description">Elegant royal colors</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </header>
 
@@ -1645,7 +1392,7 @@
         <section class="forecast-section">
             <h2 class="section-title">
                 <i class="fas fa-calendar-week"></i>
-                7-Day Professional Forecast
+                7-Day Weather Forecast
             </h2>
             <div class="forecast-grid" id="forecastGrid">
                 <div class="forecast-card">
@@ -1890,7 +1637,6 @@
         function initializeApp() {
             showLoading();
             updateCurrentDate();
-            loadThemePreference();
             loadPersonalWeatherPreference();
             setupEventListeners();
             createParticleSystem();
@@ -1946,9 +1692,6 @@
 
             // Close dropdowns when clicking outside
             document.addEventListener('click', function(e) {
-                if (!e.target.closest('.theme-selector')) {
-                    hideThemeDropdown();
-                }
                 if (!e.target.closest('.search-box')) {
                     hideSearchSuggestions();
                 }
@@ -1976,34 +1719,6 @@
                 day: 'numeric' 
             };
             document.getElementById('currentDate').textContent = now.toLocaleDateString('en-US', options);
-        }
-
-        // Theme Management
-        function toggleThemeDropdown() {
-            const dropdown = document.getElementById('themeDropdown');
-            dropdown.classList.toggle('show');
-        }
-
-        function hideThemeDropdown() {
-            const dropdown = document.getElementById('themeDropdown');
-            dropdown.classList.remove('show');
-        }
-
-        function changeTheme(theme) {
-            document.documentElement.setAttribute('data-theme', theme);
-            localStorage.setItem('weatherTheme', theme);
-            hideThemeDropdown();
-            
-            // Add theme transition effect
-            document.body.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
-            setTimeout(() => {
-                document.body.style.transition = '';
-            }, 800);
-        }
-
-        function loadThemePreference() {
-            const savedTheme = localStorage.getItem('weatherTheme') || 'corporate';
-            document.documentElement.setAttribute('data-theme', savedTheme);
         }
 
         // Personal Weather Management
@@ -2400,7 +2115,7 @@
         // Initialize the app when DOM is loaded
         document.addEventListener('DOMContentLoaded', initializeApp);
 
-        console.log('🌤️ WeatherPro Professional Dashboard loaded successfully!');
+        console.log('🌤️ WeatherPro Modern Dashboard loaded successfully!');
         console.log(`🌍 Supporting ${Object.keys(GLOBAL_WEATHER_DATA).length} cities worldwide with AI-powered data!`);
     </script>
 </body>
