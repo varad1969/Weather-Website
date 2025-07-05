@@ -18,14 +18,14 @@
     --secondary-gradient: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
     --success-gradient: linear-gradient(135deg, #00cec9 0%, #55a3ff 100%);
     --warning-gradient: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%);
-    --glass-bg: rgba(255, 255, 255, 0.18);
-    --glass-border: rgba(255, 255, 255, 0.3);
+    --glass-bg: rgba(255, 255, 255, 0.25);
+    --glass-border: rgba(255, 255, 255, 0.4);
     --text-primary: #ffffff;
     --text-secondary: rgba(255, 255, 255, 0.95);
-    --text-muted: rgba(255, 255, 255, 0.75);
+    --text-muted: rgba(255, 255, 255, 0.85);
     --accent-color: #00cec9;
-    --shadow: 0 8px 32px rgba(255, 154, 86, 0.25);
-    --shadow-hover: 0 15px 40px rgba(255, 154, 86, 0.35);
+    --shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.25);
 }
 
         body {
@@ -347,17 +347,17 @@
 
         /* Enhanced Search Section */
         .search-section {
-            background: var(--glass-bg);
-            backdrop-filter: blur(25px);
-            border: 1px solid var(--glass-border);
-            border-radius: 30px;
-            padding: 35px;
-            margin-bottom: 40px;
-            box-shadow: var(--shadow);
-            animation: slideUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.4s both;
-            position: relative;
-            overflow: hidden;
-        }
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    padding: 35px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    animation: slideUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.4s both;
+    position: relative;
+    overflow: hidden;
+}
 
         .search-section::before {
             content: '';
@@ -592,17 +592,17 @@
 
         /* Enhanced Main Weather Card */
         .main-weather {
-            background: linear-gradient(135deg, var(--glass-bg), rgba(255, 255, 255, 0.05));
-            backdrop-filter: blur(30px);
-            border: 1px solid var(--glass-border);
-            border-radius: 35px;
-            padding: 50px;
-            margin-bottom: 40px;
-            box-shadow: var(--shadow);
-            animation: slideUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.6s both;
-            position: relative;
-            overflow: hidden;
-        }
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 35px;
+    padding: 50px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    animation: slideUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.6s both;
+    position: relative;
+    overflow: hidden;
+}
 
         .main-weather::before {
             content: '';
@@ -629,15 +629,13 @@
         }
 
         .location-info h1 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            background: linear-gradient(135deg, var(--text-primary), var(--accent-color));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: titleGlow 3s ease-in-out infinite alternate;
-        }
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    animation: titleGlow 3s ease-in-out infinite alternate;
+}
 
         @keyframes titleGlow {
             0% { filter: drop-shadow(0 0 5px rgba(79, 172, 254, 0.3)); }
@@ -724,16 +722,14 @@
         }
 
         .current-temp {
-            font-size: 7rem;
-            font-weight: 200;
-            line-height: 1;
-            background: linear-gradient(135deg, var(--text-primary), var(--accent-color));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: temperaturePulse 5s ease-in-out infinite;
-            position: relative;
-        }
+    font-size: 7rem;
+    font-weight: 200;
+    line-height: 1;
+    color: #ffffff;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+    animation: temperaturePulse 5s ease-in-out infinite;
+    position: relative;
+}
 
         @keyframes temperaturePulse {
             0%, 100% { 
@@ -794,12 +790,14 @@
         }
 
         .weather-description h2 {
-            font-size: 1.8rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-            text-transform: capitalize;
-            animation: fadeInRight 1s ease 0.8s both;
-        }
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeInRight 1s ease 0.8s both;
+}
 
         .feels-like {
             color: var(--text-secondary);
@@ -841,20 +839,20 @@
         }
 
         .detail-card {
-            background: var(--glass-bg);
-            backdrop-filter: blur(25px);
-            border: 1px solid var(--glass-border);
-            border-radius: 25px;
-            padding: 30px;
-            display: flex;
-            align-items: center;
-            gap: 25px;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: var(--shadow);
-            animation: slideUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) calc(0.8s + var(--delay)) both;
-            position: relative;
-            overflow: hidden;
-        }
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    animation: slideUp 1.2s cubic-bezier(0. 0, 0.2, 1) calc(0.8s + var(--delay)) both;
+    position: relative;
+    overflow: hidden;
+}
 
         .detail-card::before {
             content: '';
@@ -961,27 +959,29 @@
 
         /* Enhanced Forecast Section */
         .forecast-section {
-            background: var(--glass-bg);
-            backdrop-filter: blur(25px);
-            border: 1px solid var(--glass-border);
-            border-radius: 35px;
-            padding: 45px;
-            margin-bottom: 40px;
-            box-shadow: var(--shadow);
-            animation: slideUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 1.2s both;
-        }
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 35px;
+    padding: 45px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    animation: slideUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 1.2s both;
+}
 
         .section-title {
-            font-size: 2.2rem;
-            font-weight: 700;
-            margin-bottom: 35px;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 18px;
-            animation: titleSlide 1s ease 1.4s both;
-        }
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 35px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    animation: titleSlide 1s ease 1.4s both;
+}
 
         @keyframes titleSlide {
             0% {
@@ -1001,16 +1001,16 @@
         }
 
         .forecast-card {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 25px;
-            padding: 30px;
-            text-align: center;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            animation: slideUp 1s cubic-bezier(0.4, 0, 0.2, 1) calc(1.6s + var(--delay)) both;
-            position: relative;
-            overflow: hidden;
-            border: 1px solid var(--glass-border);
-        }
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: slideUp 1s cubic-bezier(0.4, 0, 0.2, 1) calc(1.6s + var(--delay)) both;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
 
         .forecast-card::before {
             content: '';
