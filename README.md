@@ -1,30 +1,54 @@
-# Weather dashboard website
+# 🌦️ Live Weather Dashboard
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A fully responsive, professional **Weather Dashboard** web app built using **HTML, CSS, and JavaScript**. It shows **real-time weather updates** for **any city, country, or region** in the world using the **OpenWeatherMap API**, with modern UI, stunning animations, and smooth transitions.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/varads-projects-4006feed/v0-weather-dashboard-website)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/1tK5HGRwswG)
+---
 
-## Overview
+## 🚀 Features
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+- 🌍 **Global Weather Search** – Enter any city, country, or region
+- 📍 **Auto Location Detection** – Uses geolocation to show your local weather
+- ☁️ **Live Weather Updates** – Real-time temperature, conditions, humidity, pressure, wind speed, and more
+- 📅 **7-Day Forecast** – Forecast cards for the next 7 days
+- 💡 **Dark Mode Toggle** – Switch between dark/light themes with animations
+- 🎨 **Animated UI** – Weather-based background animations (rain, sun, snow, etc.)
+- 📱 **Fully Responsive** – Works seamlessly on mobile, tablet, and desktop
 
-## Deployment
+---
 
-Your project is live at:
+## 🛠️ Tech Stack
 
-**[https://vercel.com/varads-projects-4006feed/v0-weather-dashboard-website](https://vercel.com/varads-projects-4006feed/v0-weather-dashboard-website)**
+- `HTML5` – Semantic layout
+- `CSS3` – Responsive design, animations, theming
+- `JavaScript (ES6)` – API calls, DOM manipulation
+- `OpenWeatherMap API` – Real-time weather data
+- `Font Awesome` or `Weather Icons` – Weather visuals
 
-## Build your app
+---
 
-Continue building your app on:
+## 📁 Project Structure
 
-**[https://v0.dev/chat/projects/1tK5HGRwswG](https://v0.dev/chat/projects/1tK5HGRwswG)**
+weather-dashboard/
+├── index.html # Main HTML file
+├── style.css # All CSS styles and animations
+├── script.js # JS logic for weather, API, and UI
+├── assets/ # Icons, background images, etc.
+└── README.md # This file
 
-## How It Works
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Get Your API Key
+
+Sign up at OpenWeatherMap
+
+Copy your API key
+
+Paste it into script.js:
+
+
+Open index.html in your browser.
+
+Search for any location and view the weather live.
+
+
+🌐 Live Demo
+🔗 https://website--dashboard.vercel.app/
