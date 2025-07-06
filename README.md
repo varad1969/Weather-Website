@@ -51,4 +51,4 @@ Search for any location and view the weather live.
 
 
 🌐 Live Demo
-🔗 https://website--dashboard.vercel.app/
+🔗 https://varad1969.github.io/Weather-Website/
